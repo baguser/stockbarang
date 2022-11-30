@@ -24,6 +24,10 @@ $img ='no photo';
 $img = '<img src="images/'.$gambar.'" class="zoomable">';
 }
 
+// generate QR 
+$urlview = 'http://localhost/stockbarang/view.php?id='.$idbarang;
+$qrcode = 'https://chart.googleapis.com/chart?chs=350x350&cht=qr&chl='.$urlview.'&choe=UTF-8';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,8 +53,8 @@ $img = '<img src="images/'.$gambar.'" class="zoomable">';
     ></script>
     <style>
       .zoomable{
-        width: 200px;
-        height: 200px;
+        width: 350px;
+        height: 350px;
       }
       .zoomable:hover{
         transform: scale(1.5);
@@ -119,6 +123,7 @@ $img = '<img src="images/'.$gambar.'" class="zoomable">';
               <div class="card-header">
               <h2>  <?=$namabarang;?> </h2>
                 <?=$img;?>
+                <img src="<?=$qrcode;?>">
               </div>
               <div class="card-body">
 

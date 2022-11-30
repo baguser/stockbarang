@@ -42,7 +42,8 @@ $email = $_SESSION['email'];
   </head>
   <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.php"><?=$email;?></a>
+      <!-- <a class="navbar-brand" href="index.php"><?=$email;?></a> -->
+      <a class="navbar-brand" href="index.php">Taruna Jaya Musik</a>
       <button
         class="btn btn-link btn-sm order-1 order-lg-0"
         id="sidebarToggle"
@@ -76,12 +77,12 @@ $email = $_SESSION['email'];
                 </div>
                 Barang Keluar
               </a>
-              <!-- <a class="nav-link" href="admin.php">
+              <a class="nav-link" href="admin.php">
                 <div class="sb-nav-link-icon">
                   <i class="fas fa-tachometer-alt"></i>
                 </div>
                 Kelola Admin
-              </a> -->
+              </a>
               <a class="nav-link" href="logout.php">
                  logout
               </a>
@@ -95,9 +96,6 @@ $email = $_SESSION['email'];
         <main>
           <div class="container-fluid">
             <h1 class="mt-4">Stock Barang</h1>
-            <ol class="breadcrumb mb-4">
-              <li class="breadcrumb-item active">Stock Barang</li>
-            </ol>
            
             <div class="card mb-4">
               <div class="card-header">
@@ -203,7 +201,7 @@ $email = $_SESSION['email'];
                                   <input type="file" name="file" class="form-control">
                                   <br>
                                   <input type="hidden" name="idb" value="<?=$idb;?>">
-                                  <button type="submit" class="btn btn-primary" name="updatebarang">button</button>
+                                  <button type="submit" class="btn btn-primary" name="updatebarang">Submit</button>
                                   </div>
                                   </form>
 

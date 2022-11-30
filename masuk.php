@@ -36,7 +36,7 @@ require'cek.php';
   </head>
   <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.php">Saipah Musik</a>
+      <a class="navbar-brand" href="index.php">Taruna Jaya Musik</a>
       <button
         class="btn btn-link btn-sm order-1 order-lg-0"
         id="sidebarToggle"
@@ -89,9 +89,6 @@ require'cek.php';
         <main>
           <div class="container-fluid">
             <h1 class="mt-4">Barang Masuk</h1>
-            <ol class="breadcrumb mb-4">
-              <li class="breadcrumb-item active">Barang Masuk</li>
-            </ol>
            
                <div class="card mb-4">
               <div class="card-header">
@@ -297,7 +294,7 @@ require'cek.php';
         <br>
         <input type="number" name="qty" placeholder="Quantity" class="form-control" required>
         <br>
-        <input type="text" name="penerima" placeholder="penerima" class="form-control" required>
+        <input type="text" name="penerima" placeholder="Keterangan" class="form-control" required>
         <br>
         <button type="submit" class="btn btn-primary" name="barangmasuk">button</button>
         </div>

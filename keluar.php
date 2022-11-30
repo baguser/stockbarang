@@ -36,7 +36,7 @@ require'cek.php';
   </head>
   <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.php">Saipah Musik</a>
+      <a class="navbar-brand" href="index.php">Taruna Jaya Musik</a>
       <button
         class="btn btn-link btn-sm order-1 order-lg-0"
         id="sidebarToggle"
@@ -89,9 +89,6 @@ require'cek.php';
         <main>
           <div class="container-fluid">
             <h1 class="mt-4">Barang Keluar</h1>
-            <ol class="breadcrumb mb-4">
-              <li class="breadcrumb-item active">Barang Keluar</li>
-            </ol>
            
                <div class="card mb-4">
               <div class="card-header">
@@ -112,7 +109,7 @@ require'cek.php';
                         <th>Gambar</th>
                         <th>Nama Barang</th>
                         <th>Jumlah</th>
-                        <th>Penerima</th>
+                        <th>Keterangan</th>
                         <th>aksi</th>
                       </tr>
                     </thead>
@@ -146,9 +143,9 @@ require'cek.php';
                         <td><?=$qty; ?></td>
                         <td><?=$penerima; ?></td>
                         <td>
-                          <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?=$idk;?>"> 
+                          <!-- <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?=$idk;?>"> 
                           Edit
-                          </button>
+                          </button> -->
                           <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete<?=$idk;?>"> 
                           Delete
                           </button>
@@ -293,7 +290,7 @@ require'cek.php';
         <br>
         <input type="number" name="qty" placeholder="Quantity" class="form-control" required>
         <br>
-        <input type="text" name="penerima" placeholder="Penerima" class="form-control" required>
+        <input type="text" name="penerima" placeholder="Keterangan" class="form-control" required>
         <br>
         <button type="submit" class="btn btn-primary" name="addbarangkeluar">button</button>
         </div>
